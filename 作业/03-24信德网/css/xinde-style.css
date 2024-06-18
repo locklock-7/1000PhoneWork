@@ -1,0 +1,330 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 967px;
+	margin: auto;
+}
+.clear-fix:after{  /*万能清除法,在需要解决高度塌陷的地方加上该class名*/
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.header{
+	/*height: 15px;*/
+	margin-top: 20px;
+	background-color: #f0f0f0;
+}
+.icon-voice{
+	float: left;
+	margin-top: 2px;
+}
+.word2{
+	float: left;
+	font-size: 12px;
+	color: #d6cecb;
+}
+.word1{
+	float: left;
+	font-size: 12px;
+	color: #d6cecb;
+	margin: 0 266px 0 16px;
+}
+.icon-weixin{
+	float: right;
+	height: 12px;
+	margin: 2px 6px 0 23px;
+}
+.icon-weibo{
+	float: right;
+	height: 12px;
+	margin-top: 2px;
+}
+.neck{
+		margin-top: 35px;
+}
+.logo{
+	float: left;
+	height: 40px;
+}
+.btu{
+	width: 49px;
+	height: 25px;
+	float: right;
+	border-radius: 9px;
+	text-align: center;
+	line-height: 25px;
+}
+.regist{
+	color: black;
+	border: 2px solid #e8c044;
+	margin: 0 4px 0 20px;
+}
+.login{
+	width: 57px;
+	height: 28px;
+	color: white;
+	background-color: #e8c044;
+}
+a{
+	display: inline-block;
+	float: left;
+	font-size: 13px;
+	padding: 8px 7px;
+	margin-right: 99px;
+	margin-top: 30px;
+}
+.link1{
+	margin-left: 52px;
+}
+.link6{
+	margin-right: 50px;
+}
+a:hover{
+	color: white;
+	background-color: #0874a3;
+}
+.banner{
+	
+	margin-top: 20px;
+}
+.ban{
+	height: 320px;
+	width: 100%;
+}
+li{
+	float: left;
+	list-style: none;
+	text-align: center;
+	margin: 0 66px;
+}
+.li4{
+	margin-right: 9px;
+}
+.icon{
+	width: 31px;
+	height: 30px;
+	margin-top: 37px;
+}
+.up{
+	font-size: 16px;
+	margin-top: 18px;
+}
+.down{
+	margin-top: 18px;
+	font-size: 12px;
+}
+.tips{
+	margin-top: 45px;
+}
+.tip{
+	float: left;
+	margin: 2px 7px 0 5px;
+}
+.sen1{
+	float: left;
+	color: #94949e;
+	font-size: 13px;
+}
+.sen2{
+	float: right;
+	color: #94949e;
+	font-size: 13px;
+}
+.arrow{
+	float: right;
+	height: 13px;
+	color: #94949e;
+	margin: 2px 15px 0 12px;
+}
+.box{
+	float: left;
+	background-color: #eaf0fc;
+	width: 220px;
+	height: 217px;
+	text-align: center;
+	margin: 15px 10px 0;
+}
+.lg{
+	width: 65px;
+	height: 47px;
+	margin-top: 47px;
+}
+.line{
+	height: 2px;
+	width: 70px;
+	background-color: #4a60f2;
+	margin: 15px 0 11px 75px;
+}
+.t1{
+
+	font-size: 14px;
+	color: #8997a2;
+}
+.at{
+	font-size: 10px;
+	color: #8997a2;
+}
+.bigbox{
+	float: left;
+	margin-left: 36px;
+	width: 277px;
+	height: 496px;
+	background-color: #a4d0ff;
+	position: relative;
+	margin-top: 22px;
+}
+.tex{
+	margin: 51px 42px 0 25px;
+}
+.tit1{
+	font-size: 20px;
+}
+.content{
+	margin-top: 35px;
+	font-size: 13px;
+	line-height: 27px;
+	text-indent: 2em;
+}
+.pic{
+	position: absolute;
+	bottom: 20px;
+}
+.col{
+	background-color: #ffd7a6;
+}
+.col1{
+	background-color: #ea999f;
+}
+.smabox{
+	float: left;
+	width: 280px;
+	height: 236px;
+	margin-left: 40px;
+}
+.sbox1{
+	margin-top: 24px;
+	position: relative;
+}
+.sbox2{
+	position: relative;
+	margin-top: 22px;
+}
+.pic1{
+	position: absolute;
+	bottom: -2px;
+	right: 28px;
+}
+.pic2{
+	position: absolute;
+	bottom: 19px;
+	right: 23px;
+}
+.pic3{
+	position: absolute;
+	bottom: 54px;
+	right: 35px;
+}
+.wenben{
+	margin: 20px 0 0 40px;
+}
+.wb{
+	font-size: 11px;
+}
+.top{
+	margin: 26px 0 23px 0;
+}
+.topx{
+	margin-top: 26px;
+}
+.xy{
+	margin-top: 25px;
+}
+.sx{
+	margin: 45px 0 26px 0;
+}
+.test{
+	height: 271px;
+	background-color: #eaf0fc;
+	margin-top: 22px;
+}
+.foot{
+	height: 280px;
+	background-image: url(../images/banner_07.png);
+}
+.list-left{
+	float: left;
+	width: 525px;
+	height: 235px;
+	margin: 20px 0 0 280px;
+	border-right: 2px solid #98999d;
+}
+.tname{
+	font-size: 17px;
+}
+.ew{
+	font-size: 14px;
+	color: #B6B6B6;
+}
+.over{
+	margin-left: 34px;
+	margin-top: 18px;
+	font-size: 11px;
+}
+.blow{
+	margin-left: 200px;
+	font-size: 11px;
+	color: #666666;
+}
+.list-right{
+	float: left;
+	width: 525px;
+	height: 235px;
+	margin: 20px 0 0 47px;
+}
+.logo-2{
+	width: 95px;
+	height: 67px;
+	margin-left: 277px;
+}
+.box-left{
+	float: left;
+	width: 349px;
+	height: 132px;
+	margin-top: 20px;
+}
+.box-right{
+	float: right;
+	width: 197px;
+	height: 146px;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 20px;
+}
+.lin1{
+	font-size: 14px;
+}
+.lin2{
+	font-size: 11px;
+	color: #666;
+	line-height: 32px;
+}
+.weixin-l{
+	margin-left: 22px;
+}
+.cr{
+	text-align: center;
+	color: #9c9791;
+	margin-bottom: 25px;
+	font-size: 11px;
+}
+.phone{
+	margin-top: 10px;
+}
+.serv{
+	font-weight: bold;
+}

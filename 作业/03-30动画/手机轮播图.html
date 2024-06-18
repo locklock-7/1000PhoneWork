@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style type="text/css">
+			.phone{
+				margin: 20px 100px;
+				width: 195px;
+				position: relative;
+				overflow: hidden;
+			}
+			.picbox{
+				position: absolute;
+				top: 57px;
+				left: 13px;
+				width: 167px;
+				height: 295px;
+				overflow: hidden;
+			}
+			.pic{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 1169px;
+				height: 295px;
+				animation: Carousel 10s infinite;
+			}
+			.pic img{
+				float: left;
+				width: 167px;
+				height: 295px;				
+			}
+			@keyframes Carousel{
+				0% {
+					left: 0px;
+				}
+				15% {
+					left: -167px;
+				}
+				17% {
+					left: -167px;
+				}
+				32% {
+					left: -334px;
+				}
+				34% {
+					left: -334px;
+				}
+				49% {
+					left: -501px;
+				}
+				51% {
+					left: -501px;
+				}
+				66% {
+					left: -668px;
+				}
+				68% {
+					left: -668px;
+				}
+				83% {
+					left: -835px;
+				}
+				85% {
+					left: -835px;
+				}
+				100% {
+					left: -1002px;
+				}
+				
+			}
+			.phone:hover .pic{
+				animation-play-state: paused;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="phone">
+			<img src="images/ui-phone.png" />
+			<div class="picbox">
+				<div class="pic">
+					<img src="images/ui01.jpg" />
+					<img src="images/ui02.jpg" />
+					<img src="images/ui03.jpg" />
+					<img src="images/ui04.jpg" />
+					<img src="images/ui05.jpg" />
+					<img src="images/ui06.jpg" />
+					<img src="images/ui01.jpg" />
+				</div>
+			</div>			
+		</div>
+	</body>
+</html>

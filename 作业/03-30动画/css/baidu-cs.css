@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.clear_fix:after{
+    content:'.';
+    clear:both;
+    height:0;
+    overflow:hidden;
+    display:block;
+    visibility: hidden;
+}
+.nav a{
+	color: black;
+	margin-right: 23px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.nav{
+	float: right;
+	padding: 17px 15px 0 0;
+}
+.more{
+	display: inline-block;
+	width: 75px;
+	height: 23px;
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	line-height: 23px;
+	background-color: #3388ff;
+}
+/* .logo{
+	position: relative;
+	width: 255px;
+	height: 120px;
+	background-image: url(../images/bd_logo1.png) ;
+}
+.logo img{
+	position: absolute;
+width: 255px;
+	height: 120px;
+} */
+
+.logo{
+	position: absolute;
+	left: -255px;
+	top: 80px;
+	width: 255px;
+	height: 120px;
+	animation: logo 10s;
+	animation-fill-mode: forwards;
+}
+@keyframes logo{
+	0% {
+		left: -255px;
+	}
+	40% {
+		transform: translateX(900px);
+	}
+	50% {		
+		transform: translate(900px,-56px);
+	}
+	60% {		
+		transform: translate(900px,0);
+	}
+	70% {		
+		transform: translate(900px,-56px);
+	}
+	80% {		
+		transform: translate(900px,0);
+	}
+	95% {
+		transform: translate(900px,0) rotate(360deg);
+		
+	}
+	100% {		
+		transform: translate(900px,0) rotate(360deg);
+	}
+}
+
+
+
+
+
+
+
+
+.box{
+	position: absolute;
+	top: 230px;
+	margin-left: 399px;
+}
+.serch-box{
+	float: left;
+	width: 627px;
+	height: 33px;
+	border: 1px solid #cccccc;
+}
+.click{
+	float: left;
+	width: 105px;
+	height: 35px;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	background-color: #3388ff;
+	font-size: 15px;
+}
+.foot{
+	position: absolute;
+	bottom: 46px;
+    left: 410px;
+}
+
+.code{
+	float: left;
+	margin-right: 40px;
+}
+.codeimg{
+	float: left;
+	margin-right: 13px;
+}
+.link{
+	float: left;
+	font-size: 11px;
+}
+.up{
+	margin-top: 16px;
+}
+.down{
+	margin-top: 3px;
+	color: #cccccc;
+}
+.links{
+	float: left;
+	margin-top: 16px;
+	font-size: 11px;
+}
+.line1 a{
+	color: black;
+}
+.line2 a{
+	color: #cccccc;
+}
+.line2{
+	margin-top: 3px;
+	color: #cccccc;
+}
+.uplink{
+	margin-right: 30px;
+}
+.downlink{
+	margin-right: 10px;
+}
+

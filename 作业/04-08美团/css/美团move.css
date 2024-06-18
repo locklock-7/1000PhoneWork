@@ -1,0 +1,229 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 设置点击输入时外边缘线消失 */
+input:focus{
+	outline: none;
+}
+html, body{
+	/* 高度撑满整个浏览器,才有剩余空间这个概念 */
+	height: 100%;
+}
+body{
+	/* 开启flex布局,并且主轴是垂直方向. */
+	display: flex;	
+	flex-direction: column;
+}
+header{
+	height: 50px;
+	background-color: #ffc002;
+	/* 给父元素设置flex布局,子元素就能够按照水平方向排列(默认情况下) */
+	display: flex;
+	/* 给交叉轴设置居中对齐方式,实现垂直居中.(因为主轴是水平方向) */
+	align-items: center;
+}
+select{
+	margin: 0 12px;
+	border: none;
+	background: none;
+	
+}
+/* 搜索框撑满中间区域 */
+.search{
+	flex: 1;
+	height: 32px;
+	background-color: #fffae6;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+.search input{
+	flex: 1;
+	border: none;
+	background: none;
+	height: 100%;
+	margin-left: 5px;
+}
+.locat{
+	margin: 0 10px;
+}
+
+main{
+	/* 设置flex为1,可将剩余空间撑满 */
+	flex: 1;
+	/* 中间区域超出部分可用滚动条查看 */
+	overflow: auto;
+}
+.main-top{
+	height: 53px;
+	background-color: #000000;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+}
+.word{
+	flex: 1;
+	color: white;
+	margin-left: 12px;
+}
+.word-up{
+	font-size: 13px;
+}
+.word-blew{
+	font-size: 10px;
+}
+	
+.link{
+	height: 31px;
+	width: 55px;
+	border-radius: 10px;
+	background-color: #fec900;
+	color: #000000;
+	text-align: center;
+	line-height: 31px;
+	font-size: 12px;
+}
+.menu{
+	display: flex;
+	/* 换行 */
+	flex-wrap: wrap;
+}
+.menu-list{
+	/* 一行显示5个,每个占20% */
+	width: 20%;
+	height: 80px;
+	/* 让其中的子元素垂直排列 */
+	display: flex;
+	flex-direction: column;
+	/* 设置每个menu-list中的内容都垂直水平居中 */
+	/* 主轴方向(垂直)上垂直居中 */
+	justify-content: center;
+	/* 交叉轴方向(水平)上居中 */
+	align-items: center;
+}
+.divid{
+	height: 12px;
+	background-color: #eff0eb;
+}
+.guess{
+	height: 40px;
+	line-height: 40px;
+	padding: 0 11px;
+	
+}
+.goods{
+	/* 子元素水平方向排列 */
+	display: flex;
+	/* 交叉轴方向居中,即垂直方向居中 */
+	align-items: center;
+	height: 103px;
+	margin: 0 11px;
+	border-top: 2px solid #d9d8d4;
+}
+.intro{
+	margin-left: 12px;
+	flex: 1;
+}
+.title{
+	font-size: 14px;
+}
+.mid{
+	font-size: 10px;
+	color: #626260;
+}
+.money{
+	font-size: 12px;
+	color: #626260;
+	margin-top: 28px;
+}
+.money span{
+	font-size: 15px;
+	color: #ff650f;
+	margin-right: 5px;
+}
+.num{
+	margin-top: 70px;
+	font-size: 12px;
+	color: #626260;
+}
+
+footer{
+	height: 218px;
+}
+.check{
+	height: 40px;
+	font-size: 13px;
+	color: #ff650f;
+	border-top: 2px solid #d9d8d4;
+	border-bottom: 3px solid #d9d8d4;
+	line-height: 40px;
+	padding: 0 11px;
+}
+.btn{
+	height: 27px;
+	padding: 15px 25px 0 25px;
+	display: flex;
+}
+.choose{
+	flex: 1;
+}
+.choose p{
+	display: inline-block;
+	width: 55px;
+	height: 27px;
+	color: #000000;
+	background-color: #ffcc00;
+	font-size: 13px;
+	text-align: center;
+	line-height: 27px;
+	border-radius: 5px;
+}
+.chengdu {
+	font-size: 15px;
+}
+.city{
+	font-size: 13px;
+	color: #B6B6B6;
+}
+.nav{
+	display: flex;
+	margin-top: 25px;
+}
+.nav a{
+	text-align: center;
+	flex: 1;
+	color: #ffcc00;
+	font-size: 12px;
+}
+.kindlink{
+	/* height: 68px; */
+	display: flex;
+	padding: 25px 0;
+	font-size: 11px;
+	color: #626260;
+	text-align: center;
+	/* 设置主轴上对齐方式为居中 */
+	justify-content: center;
+	/* border-bottom: 1px solid #626260; */
+	
+}
+.kindlink a{
+	margin: 0 15px;
+}
+.bom{
+	display: flex;
+	/* 交叉轴方向上居中 */
+	align-items: center;	
+}
+.bom p{
+	color: #B6B6B6;
+	font-size: 11px;
+	margin: 0 15px;
+}
+.line{
+	flex: 1;
+	height: 1px;
+	background-color: #B6B6B6;
+}

@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+.main{
+	width: 1227px;
+	margin: auto;  /*版心水平居中*/
+}
+.header{
+	height: 56px;
+	background: #282633;
+}
+.nav{
+	height: 56px;	
+}
+.logo{
+	float: left;
+	width: 100px;
+	height: 40px;
+	margin-top: 7px;
+	padding-right: 55px;
+	border-right: 2px solid black ;
+}
+.l1{
+	margin-left: 45px;
+}
+.link{
+	float: left;
+	color: white;
+	font-size: 17px;
+	height: 55px;
+	width: 100px;	
+	text-align: center;
+	line-height: 56px;
+}
+.login{
+	width: 60px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	float: right;
+	margin-top: 13px;
+	color: white;
+	font-size: 13px;
+}
+.log2{
+	border: 2px solid #7499b6;
+}
+.log1{
+	border: 2px solid #709890;
+	margin:13px 18px 0px 5px;
+}
+.link:hover{
+	background-color: #1c1b23;
+}
+.login:hover{
+	background-color: #1c1b23;
+}
+.banner{
+	height: 580px;
+	background: url(../images/zuiku73.png) center no-repeat;
+}
+.content{
+	height: 426px;
+}
+.word{
+	float: left;
+	width: 361px;
+	height: 177px;
+	margin: 200px 0px 0px 125px;
+	color: #02665e;
+}
+.t1{
+	font-size: 45px;
+}
+.introduce{
+	margin-top: 49px;
+	font-size: 20px;
+}
+.pic{
+	float: right;
+	width: 592px;
+	height: 416px;
+	margin: 104px 87px 0px 0px;
+}
+.face{
+	height: 379px;
+}
+li{
+	float: left;
+	list-style: none;
+	width: 230px;
+	height: 257px;
+	text-align: center;
+	margin: 62px 30px 0px 30px;
+	color: #7c7c7c;
+}
+.top{
+	margin-top: 25px;
+	font-size: 18px;
+}
+.down{
+	margin-top: 15px;
+	font-size: 13px;
+}
+.mid{
+	height: 117px;
+	background-color: #fafafa;
+}
+.t2{
+	height: 63px;
+	text-align: center;
+	line-height: 72px;
+	color: #6e6f74;
+}
+.t3{
+	float: left;
+	width: 191px;
+	height: 39px;
+	text-align: center;
+	line-height: 39px;
+	color: #6e6f74;
+	border-right: 2px solid #6e6f74;
+}
+.t3:hover{
+	color:#4192d7;
+}
+.inter{
+	background-color: #68ccaa;
+	height: 520px;
+}
+.sentens{
+	float: left;
+	color: white;
+	margin-left: 105px;
+}
+.t4{
+	margin-top: 145px;
+	font-size: 39px;
+}
+.t4-1{
+	font-size: 20px;
+}
+.shake{
+	margin-top: 17px;
+}
+.solu{
+	margin-top: 36px;
+}
+.t4-2{
+	font-size: 14px;	
+}
+.wechat{
+	margin-top: 17px;
+}
+.circl{
+	float: right;
+	height: 484px;
+	width: 527px;
+	margin: 35px 70px 0px 0px;
+}
+.works{
+	height: 1028px;
+	background-color: #fafafa;
+}
+.t5{
+	height: 116px;
+	text-align: center;
+	line-height: 116px;
+	font-size: 25px;
+	color: #757774;
+}
+.work{
+	float: left;
+	height: 246px;
+	width: 199px;
+	text-align: center;
+	font-size: 13px;
+	color: #606060;
+	margin-right: 22px;
+}
+.ver{
+	margin-left: 65px;
+}
+.line1{
+	height: 246px;
+	margin-bottom: 43px;
+}
+.tip{
+	margin-top: 15px;
+	font-size: 11px;
+	width: 199px;
+	white-space: nowrap;  /*强制文本在一行内显示*/
+	overflow: hidden;     /*溢出内容为隐藏*/
+	text-overflow: ellipsis;   /*溢出文本显示省略号*/
+}
+.check{
+	float: left;
+	color: #606060;
+	width: 168px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 13px;
+	margin:32px 0px 0px 525px;
+	border: 1px solid #b6b6b6;
+}
+.who{
+	height: 520px;
+}
+.t6{
+	height: 116px;
+	text-align: center;
+	line-height: 116px;
+	font-size: 25px;
+	color: #757774;
+}
+.bran{
+	width: 1089px;
+	height: 343px;
+	margin-left: 73px;
+}
+.foot{
+	height: 200px;
+	background-color: #57586d;
+}
+.infors{
+	float: left;
+	color: white;
+	margin-top: 33px;
+}
+.code{
+	float: right;
+	color: white;
+	margin: 33px 20px 0px 0px;
+	text-align: center;
+	font-size: 12px;
+}
+.w1{
+	font-size: 16px;
+}
+.w1-1{
+	font-size: 12px;
+}
+.qq{
+	vertical-align: middle;
+}
+.w2{
+	margin-top: 30px;
+	font-size: 12px;
+}
+.w3{
+	font-size: 12px;
+	margin-top: 8px;
+}

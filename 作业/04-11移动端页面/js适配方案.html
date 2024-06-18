@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 使用flexible.js的适配方案，不需要再写视口的meta标签了 -->
+		<script src="flexible.js" type="text/javascript" charset="UTF-8"></script>
+		<!-- 引入iconfont资源 -->
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_2478987_l0i70wuoju.css" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				
+			}
+			html{
+				height: 100%;
+			}
+			/*
+				在flexible.js里面已经将我们html的fontsize设置成了75px
+				让物理像素和逻辑像素完全相等，此时不需要考虑dpr的概念，量出来多大就是多大
+				如果按照750的设计图作参考，量出来的尺寸为200
+				则换算成rem单位就是 200/75 rem
+			*/
+			body{ 
+				/* 使用flex布局，并将主轴方向设置为垂直，即让所有子元素垂直排列 */
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				font-size: 0.187rem;
+			}
+			a{
+				text-decoration: none;
+				color: #333;
+			}
+			
+			header{
+				background-color: #298ccf;
+				/* 
+					量出来的尺寸/75	88/75;
+				*/				
+				height: 1.16rem;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+			}
+			/* 两侧按钮区设置为定位方式，以防止对中间部分造成影响 */
+			.h-btn-left{
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+			}
+			.h-btn-left a{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 0.44rem;				
+				height: 100%;
+				color: #fff;
+			}
+			.h-tab{
+				display: inline-block;
+				/* 量出来的尺寸120px x 50px然后转换为rem单位 */
+				width: 1.6rem;
+				height: 0.67rem;
+				background-color: #54a3d9;
+				color: #b2d1ff;
+				font-size: 0.32rem;
+				text-align: center;
+				line-height: 0.67rem;
+				
+			}
+			.h-tab.high-light{
+				background-color: #76b5e1;
+				color: white;
+			}
+			/* 选择class名字为h-tab的第一个孩子设置圆角，半径最大只能是高度的一半，因此会自动取值为一半 */
+			.h-tab:nth-child(1){
+				border-radius: 0.67rem 0 0 0.67rem;
+			}
+			.h-tab:nth-child(2){
+				border-radius: 0 0.67rem 0.67rem 0;
+			}
+			
+			
+			main{				
+				flex: 1;
+				overflow: auto;
+				display: flex;
+				flex-direction: column;
+				background-color: #f1f1f1;
+			}
+			.tea{
+				background-color: #fff;
+				height: 10.334rem;
+				margin-bottom: 0.1867rem;
+			}
+			.bg{
+				height: 7.64rem;
+				width: 100%;
+			}
+			.tea-head{
+				display: flex;
+				align-items: center;
+				padding: 0.12rem 0.24rem 0.294rem 0.334rem;
+			}
+			.tea-head p{
+				font-size: 0.2934rem;
+				color: #919191;
+			}
+			.zan{
+				font-size: 0.2934rem;
+			}
+			.tea-name{
+				flex: 1;
+				margin-left: 0.187rem;
+			}
+			.tea-name p:nth-child(1){
+				font-size: 0.373rem;
+				color: #666;
+				margin-bottom: 0.267rem;
+			}
+			.course{
+				font-size: 0.32rem;
+				color: #666;
+				margin-left: 0.334rem;
+				margin-bottom: 0.293rem;
+			}
+			footer{
+				height: 1.16rem;
+				display: flex;	
+				align-items: center;
+				position: relative;
+			}
+			footer a{
+				text-align: center;
+				flex: 1;
+			}
+			.camera{
+				position: absolute;
+				width: 1.34rem;
+				height: 1.34rem;
+				border-radius: 50%;
+				border: 0.0134rem solid #999999;
+				text-align: center;
+				line-height: 1.34rem;
+				background-color: white;	
+				margin-bottom: 0.2rem;
+				left: 50%;
+				margin-left: -0.67rem;
+			}
+			.cam{
+				font-size: 0.734rem;
+				color: #999;
+			}
+			.ch{
+				font-size: 0.294rem;
+				color: #999;
+			}
+			.icon{
+				font-size: 0.454rem;
+				color: #999;
+			}
+			.light{
+				color: #298ccf;				
+			}
+			.mid{
+				margin-right: 1.46rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a class="h-tab high-light" href="">热点</a>
+			<a class="h-tab" href="">关注</a>
+			<div class="h-btn-left">
+				<a href="">
+					<!-- 添加的小图标，class名字必须带有iconfont -->
+					<i class="iconfont icon-daohang"></i>
+				</a>
+			</div>			
+		</header>
+		<main>
+			 <div class="tea">
+				 <div class="tea-head">
+					 <img src="images/head.png"/>
+					 <div class="tea-name">
+						 <p>古散艺人</p>
+						 <p>千峰HTML5学院教学副总监</p>
+					 </div>
+					 <p>382344
+							<i class="iconfont icon-dianzan zan"></i>
+					</p>
+				 </div>
+				 <img class="bg" src="images/gu-bg.jpg"/>
+				 <p class="course">《编程小白福音系列之HTML+css入门》系列课程</p>
+			 </div>
+			<div class="tea">
+				<div class="tea-head">
+					<img src="images/head.png"/>
+					<div class="tea-name">
+							<p>加百利</p>
+							<p>千峰HTML5好程序员金牌讲师</p>
+					</div>
+					<p>382344
+						<i class="iconfont icon-dianzan zan"></i>
+					</p>
+				</div>
+				<img class="bg" src="images/gu-bg.jpg"/>
+				<p class="course">《编程小白福音系列之HTML+css入门》系列课程</p>
+			</div>  
+			<div class="tea">
+							 <div class="tea-head">
+								 <img src="images/head.png"/>
+								 <div class="tea-name">
+									 <p>古散艺人</p>
+									 <p>千峰HTML5学院教学副总监</p>
+								 </div>
+								 <p>382344
+										<i class="iconfont icon-dianzan zan"></i>
+								</p>
+							 </div>
+							 <img class="bg" src="images/gu-bg.jpg"/>
+							 <p class="course">《编程小白福音系列之HTML+css入门》系列课程</p>
+			</div>
+		</main>
+		<footer>
+			<a href="" >
+				<!-- 添加的小图标，class名字必须带有iconfont -->
+				<i class="iconfont icon-shouye icon light"></i>
+				<p class="ch light">首页</p>
+			</a>
+			<a href="" class="mid">
+				<i class="iconfont icon-sousuo icon"></i>
+				<p class="ch">发现</p>
+			</a>
+			<div class="camera">
+				<a href="">
+					<i class="iconfont icon-xiangji cam"></i>
+				</a>
+			</div>	
+			<a href="">
+				<i class="iconfont icon-wode icon"></i>
+				<p class="ch">我的</p>
+			</a>
+			<a href="">
+				<i class="iconfont icon-tuichu icon"></i>
+				<p class="ch">退出</p>
+			</a>
+			
+		</footer>
+	</body>
+</html>
+

@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 1203px;
+	margin: auto;
+}
+.head{
+	height: 91px;
+}
+.banner{
+	height: 620px;
+}
+.first{
+	height: 61px;
+	line-height: 33px;
+}
+.news{
+	height: 1578px;
+}
+.foot{
+	height: 309px;
+	background-color: #333333;
+}
+.guide{
+	float: left;
+	width: 140px;
+	height: 91px;
+	text-align: center;
+	line-height: 91px;
+}
+.r{
+	float: right;
+}
+.logo{
+	float: left;
+	margin: 0px 142px 5px 142px;
+}
+.intro{
+	font-size: 17px;
+	width: 140px;
+	height: 32px;
+	padding-left: 13px;
+	border-left: 4px solid #e87604;
+	margin-top: 25px;
+}
+.t{
+	height: 117px;
+	text-align: center;
+}
+.et1{
+	padding-top: 37px;
+	font-size: 20px;
+}
+.ct1{
+	text-align: center;
+	font-size: 20px;
+	width: 82px;
+	padding-bottom: 10px;
+	margin-left: 560px;
+	border-bottom: 2px solid #ffc929;
+	
+}
+li{
+	list-style: none;
+	height: 390px;
+	border-bottom: 1px solid #323232;
+	position: relative;
+}
+.pic{
+	float: left;
+	width: 522px;
+	height: 306px;
+}
+.introduce{
+	float: right;
+	width: 632px;
+	height: 295px;
+	border: 1px solid #323232;
+	position: relative;
+}
+.up{
+	width: 273px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 27px;
+	border-bottom: 1px solid #323232;
+}
+.down{
+	width: 574px;
+	height: 124px;
+	margin: 32px 0px 0px 27px;
+	line-height: 25px;
+	font-size: 15px;
+	text-indent: 30px; /*首行缩进*/
+}
+.squar{
+	width: 60px;
+	height: 45px;
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	padding-top: 17px;
+	background-color: #666666;
+	position: absolute;
+	left: 42px;
+	top: -34px;
+}
+.add{
+	height: 50px;
+	width: 50px;
+	font-size: 32px;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 50%;
+	color: white;
+	font-weight: bold;
+	background-color: #666666;
+	position: absolute;
+	right: 289px;
+	bottom: -25px;	
+}
+.l2{
+	margin-top: 60px;
+}
+.up2{
+	width: 350px;
+}
+.up3{
+	width: 300px;
+}
+.more{
+	height: 43px;
+	width: 103px;
+	text-align: center;
+	line-height: 43px;
+	border-radius: 35%;
+	background-color: #ffca26;
+	margin: 54px 0px 0px 550px;
+}
+.flogo{
+	text-align: center;
+	padding-top: 10px;
+}
+a{
+	text-align: center;
+	display: inline-block;
+	width: 120px;
+	height: 18px;
+	font-size: 13px;
+	
+}
+.link{
+	border-right: 1px solid white;
+}
+.link1{
+	margin-left: 167px;
+}
+.links{
+	height: 33px;
+	color: white;
+	margin-top: 35px;
+}
+.wlog{
+	height: 67px;
+	text-align: center;
+	margin-top: 17px;
+}
+.weibo{
+	margin-right: 45px;
+}
+.address{
+	text-align: center;
+	color: white;
+	font-size: 13px;
+}
+
+
+

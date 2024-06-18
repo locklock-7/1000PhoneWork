@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.squar{
+				width: 300px;
+				height: 300px;
+				/* border: 1px solid #1F96F4; */
+				margin:200px auto;
+				position: relative;
+				transform-style: preserve-3d;
+				transform:rotateX(18deg) rotateY(0deg);
+				animation: rota 5s infinite;
+			}
+			@keyframes rota{
+				0%{
+					transform:rotateX(18deg) rotateY(0deg);
+				}
+				10%{
+					transform:rotateX(18deg) rotateY(36deg);
+				}
+				20%{
+					transform:rotateX(18deg) rotateY(72deg);
+				}
+				30%{
+					transform:rotateX(18deg) rotateY(108deg);
+				}
+				40%{
+					transform:rotateX(18deg) rotateY(144deg);
+				}
+				50%{
+					transform:rotateX(18deg) rotateY(180deg);
+				}
+				60%{
+					transform:rotateX(18deg) rotateY(216deg);
+				}
+				70%{
+					transform:rotateX(18deg) rotateY(252deg);
+				}
+				80%{
+					transform:rotateX(18deg) rotateY(288deg);
+				}
+				90%{
+					transform:rotateX(18deg) rotateY(324deg);
+				}
+				100%{
+					transform:rotateX(18deg) rotateY(360deg);
+				}
+				
+			}
+			.squar div{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: .5;
+			}
+			.left{
+				background-color: red;
+				transform: translateX(-150px) rotateY(90deg);				
+			}
+			.right{
+				background-color: yellow;
+				transform: translateX(150px) rotateY(-90deg);
+			}
+			.up{
+				background-color: blue;
+				transform: translateY(-150px) rotateX(90deg);
+			}
+			.down{
+				background-color: green;
+				transform: translateY(150px) rotateX(-90deg);
+			}
+			.front{
+				background-color: orange;
+				transform: translateZ(150px);
+			}
+			.behind{
+				background-color: purple;
+				transform: translateZ(-150px) rotateY(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="squar">
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="up"></div>
+			<div class="down"></div>
+			<div class="front"></div>
+			<div class="behind"></div>
+		</div>
+	</body>
+</html>

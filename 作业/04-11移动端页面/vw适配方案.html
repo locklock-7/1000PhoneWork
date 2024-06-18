@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+		maximum-scale=1.0,user-scalable=no" />
+		<!-- 引入iconfont资源 -->
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_2478987_a54mcr26hul.css" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				/* 触发怪异盒模型 */
+				box-sizing: border-box; 
+			}
+			html{
+				height: 100%;
+				/*
+					自定义设置 100px=1rem ，规定1rem等于页面的字体大小的px
+					100vw等于完整地视口大小
+					因此，如果视口大小是375px，则100vw=375px
+					则1vw=3.75px
+					则26.67vw=100px
+					vw相当于比例值，设置页面的font-size为vw值，即可自适应的去匹配不同视口大小的移动端
+				*/
+				font-size: 26.67vw;
+			}
+			
+			body{ 
+				/* 使用flex布局，并将主轴方向设置为垂直，即让所有子元素垂直排列 */
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				font-size: 0.07rem;
+			}
+			a{
+				text-decoration: none;
+				color: #333;
+			}
+			
+			header{
+				background-color: #298ccf;
+				/* 
+					设计图高度是88px，dpr=2，高度等于设计图高度/dpr 
+					因为 1rem=100px
+					所以 高度=88/dpr/100 rem
+						量出来的尺寸/dpr比例/1rem的px大小
+				*/				
+				height: 0.44rem;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+			}
+			/* 两侧按钮区设置为定位方式，以防止对中间部分造成影响 */
+			.h-btn-left{
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+			}
+			.h-btn-left a{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 0.27rem;
+				height: 100%;
+				color: #fff;
+			}
+			.h-tab{
+				display: inline-block;
+				/* 量出来的尺寸120px x 50px然后转换为rem单位 */
+				width: 0.6rem;
+				height: 0.25rem;
+				background-color: #54a3d9;
+				color: #b2d1ff;
+				font-size: 0.12rem;
+				text-align: center;
+				line-height: 0.25rem;
+				
+			}
+			.h-tab.high-light{
+				background-color: #76b5e1;
+				color: white;
+			}
+			/* 选择class名字为h-tab的第一个孩子设置圆角，半径最大只能是高度的一半，因此会自动取值为一半 */
+			.h-tab:nth-child(1){
+				border-radius: 0.25rem 0 0 0.25rem;
+			}
+			.h-tab:nth-child(2){
+				border-radius: 0 0.25rem 0.25rem 0;
+			}
+			nav{
+				height: 0.35rem;
+				border-bottom: 0.005rem solid #606060;
+				display: flex;
+				justify-content: center;
+				/* 交叉轴（垂直方向）上面按照底部对齐 */
+				align-items: flex-end;
+				font-size: 0.12rem;
+				color: #666666;
+				text-align: center;
+				
+			}
+			nav p{
+				flex: 1;
+				height: 0.25rem;
+			}
+			nav p:nth-child(1){  
+				/* padding-bottom: 0.085rem; */
+				border-bottom: 0.025rem solid #298ccf;
+				color: #298ccf;
+			}
+			
+			main{				
+				flex: 1;
+				overflow: auto;
+				padding: 0.1rem 0.035rem;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.teacher{
+				height: 1.87rem;
+				/* width: 1.805rem; */
+				text-align: center;
+				font-size: 0.12rem;
+				color: #666666;
+				width: 50%;
+			}
+			.teacher img{
+				width: 1.805rem;
+				height: 1.57rem;
+			}
+			footer{
+				height: 0.435rem;
+				display: flex;	
+				align-items: center;
+				position: relative;
+			}
+			footer a{
+				text-align: center;
+				flex: 1;
+			}
+			.camera{
+				position: absolute;
+				width: 0.515rem;
+				height: 0.515rem;
+				border-radius: 50%;
+				border: 0.005rem solid #999999;
+				text-align: center;
+				line-height: 0.515rem;
+				background-color: white;	
+			    margin-bottom: 0.08rem;
+				left: 50%;
+				margin-left: -0.2575rem;
+			}
+			.cam{
+				font-size: 0.275rem;
+				color: #999;
+			}
+			.ch{
+				font-size: 0.11rem;
+				color: #999;
+			}
+			.icon{
+				font-size: 0.17rem;
+				color: #999;
+			}
+			.light{
+				color: #298ccf;
+				
+			}
+			.mid{
+				margin-right: 0.55rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a class="h-tab high-light" href="">热点</a>
+			<a class="h-tab" href="">关注</a>
+			<div class="h-btn-left">
+				<a href="">
+					<!-- 添加的小图标，class名字必须带有iconfont -->
+					<i class="iconfont icon-daohang"></i>
+				</a>
+			</div>			
+		</header>
+		<nav>
+			<p>讲师团队</p>
+			<p>学员生活</p>
+			<p>千峰风采</p>
+		</nav>
+		<main>
+			<div class="teacher">
+				<img src="images/te12_03.jpg" />
+				<p>古散艺人</p>
+			</div>
+			<div class="teacher">
+				<img src="images/te13_03.jpg" />
+				<p>吴大勋</p>
+			</div>
+			<div class="teacher">
+				<img src="images/te14_03.jpg" />
+				<p>公羊无衣</p>
+			</div>
+			<div class="teacher">
+				<img src="images/te15_03.jpg" />
+				<p>西北肖战</p>
+			</div>
+			<div class="teacher">
+				<img src="images/te8_03.jpg" />
+				<p>蓝臻</p>
+			</div>
+			<div class="teacher">
+				<img src="images/te9_03.jpg" />
+				<p>魏无羡</p>
+			</div>              
+		</main>
+		<footer>
+			<a href="" >
+				<!-- 添加的小图标，class名字必须带有iconfont -->
+				<i class="iconfont icon-shouye icon light"></i>
+				<p class="ch light">首页</p>
+			</a>
+			<a href="" class="mid">				
+				<i class="iconfont icon-sousuo icon"></i>
+				<p class="ch">发现</p>
+			</a>
+			<div class="camera">
+				<a href="">					
+					<i class="iconfont icon-xiangji cam"></i>
+				</a>
+			</div>	
+			<a href="">				
+				<i class="iconfont icon-wode icon"></i>
+				<p class="ch">我的</p>
+			</a>
+			<a href="">				
+				<i class="iconfont icon-tuichu icon"></i>
+				<p class="ch">退出</p>
+			</a>
+		</footer>
+	</body>
+</html>
